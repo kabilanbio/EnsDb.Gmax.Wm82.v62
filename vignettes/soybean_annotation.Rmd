@@ -36,12 +36,18 @@ install.packages("EnsDb.Gmax.Wm82.v62", repos = NULL, type = "source")
 
 ```{r loading}
 library(EnsDb.Gmax.Wm82.v62)
-edb <- EnsDb.Gmax.Wm82.v62
+edb <- tryCatch(
+  EnsDb.Gmax.Wm82.v62,
+  error = function(e) {
+    message("Database not available (maybe offline). Skipping example.")
+    return(NULL)
+  }
+)
 ```
 
 # Available columns and filters
 
-```{r overview}
+```{r overview, eval = !is.null(edb)}
 columns(edb)
 supportedFilters(edb)
 ```
@@ -50,20 +56,20 @@ supportedFilters(edb)
 
 `genes()` returns a `GRanges` object with gene‑level information.
 
-```{r genes}
+```{r genes, eval = !is.null(edb)}
 gene_gr <- genes(edb)
 head(gene_gr)
 ```
 
 # Filter genes by ID
 
-```{r filter_gene}
+```{r filter_gene, eval = !is.null(edb)}
 genes(edb, filter = GeneIdFilter("Glyma.01G000100"))
 ```
 
 # Filter genes by biotype
 
-```{r filter_gene_biotype}
+```{r filter_gene_biotype, eval = !is.null(edb)}
 genes(edb, filter = GeneBiotypeFilter("protein_coding"))
 ```
 
@@ -73,7 +79,7 @@ The database stores chromosome names as bare numbers (`1`, `2`, …). To add a
 common prefix (e.g., `Gm01`), first restrict to the 20 nuclear chromosomes and
 then modify the seqlevels:
 
-```{r chromosomes}
+```{r chromosomes, eval = !is.null(edb)}
 gene_gr <- genes(edb)
 library(GenomeInfoDb)
 gene_gr_main <- keepStandardChromosomes(gene_gr, pruning.mode = "coarse")
