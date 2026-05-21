@@ -1,0 +1,2 @@
+Title,Description,BiocVersion,Genome,SourceType,SourceVersion,SourceUrl,Species,TaxonomyId,Coordinate_1_based,DataProvider,Maintainer,RDataClass,DispatchClass,Location_Prefix,RDataPath,Tags
+EnsDb.Gmax.Wm82.v62,Ensembl-based annotations for Glycine max (soybean) assembly Williams 82 v4,3.24,NA,MySQL,May 21 2026,https://doi.org/10.5281/zenodo.20283224,Glycine max,3847,TRUE,Ensemble Plants,Kabilan S <kabilan151414@gmail.com>,EnsDb,SQLiteFile,https://zenodo.org/,records/20320955/files/Glycine_max.Glycine_max_v2.1.62.sqlite,"AnnotationHub,EnsDb,Glycine max"

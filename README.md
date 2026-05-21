@@ -1,0 +1,2 @@
+# EnsDb.Gmax.Wm82.v62
+Provides the Ensembl Plants gene, transcript, and exon annotations for the soybean genome assembly Williams 82 v4 (Glycine_max_v2.1), based on the official Ensembl release 62. Gene IDs follow the Wm82.a4.v1 nomenclature (Glyma.XXGXXXXXX). Chromosome lengths are included.
