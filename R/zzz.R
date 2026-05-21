@@ -1,6 +1,7 @@
 #' @name EnsDb.Gmax.Wm82.v62
 #' 
-#' @title EnsDb object for *Glycine max* assembly Williams 82 v4
+#' @title Ensembl-based annotations for Glycine max (soybean) assembly Williams 
+#' 82 v4
 #'
 #' @description
 #' This object provides gene, transcript and exon annotations for the

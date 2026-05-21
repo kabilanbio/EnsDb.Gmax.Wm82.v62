@@ -1,5 +1,6 @@
 Package: EnsDb.Gmax.Wm82.v62
-Title: Ensembl-based annotations for Glycine max (soybean) assembly Williams 82 v4
+Title: Ensembl-based annotations for Glycine max (soybean) assembly 
+    Williams 82 v4
 Description: This package provides gene, transcript and exon annotations for the
     soybean genome assembly Williams 82 v4 (Glycine_max_v2.1), based on
     Ensembl Plants release 62.  Gene IDs follow the Wm82.a4.v1 nomenclature
@@ -31,7 +32,7 @@ Suggests:
 Encoding: UTF-8
 VignetteBuilder: knitr
 License: Artistic-2.0
-biocViews: AnnotationData, FunctionalAnnotation, Oryza_sativa
+biocViews: AnnotationData, FunctionalAnnotation, Glycine_max
 URL: https://github.com/kabilanbio/EnsDb.Osativa.IRGSP.62
 BugReports: https://github.com/kabilanbio/EnsDb.Osativa.IRGSP.62/issues
-RoxygenNote: 7.3.3
+Config/roxygen2/version: 8.0.0

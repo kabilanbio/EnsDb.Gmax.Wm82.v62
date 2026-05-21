@@ -28,7 +28,7 @@ expected.
 
 From the source tarball:
 
-```{r, eval = FALSE}
+```{r installing, eval = FALSE}
 install.packages("EnsDb.Gmax.Wm82.v62", repos = NULL, type = "source")
 ```
 
